@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basics</title>
+    <style>
+      body {
+        text-align: center;
+      }
+      #mydiv {
+        background-color: brown;
+        font-size: 20px;
+        color: white;
+        padding: 40px;
+        margin-top: 40px;
+      }
+      button {
+        padding: 20px;
+        background-color: yellow;
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Welcome to this page</h1>
+    <button onclick="myfunction()">See the hidden message</button>
+    <div id="mydiv">
+      You are dumped into this site
+    </div>
+    <script>
+      function myfunction() {
+        var x = document.getElementById("mydiv");
+        if (x.style.display == "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+      }
+    </script>
+  </body>
+</html>
